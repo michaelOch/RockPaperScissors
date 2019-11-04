@@ -11,10 +11,8 @@ function computerPlay () {
 }
 
 function playerPlay () {
-    let playerSelection = prompt("What's your play?");
-    // let playerSelection = prompt("What's your play?\nNote:\n1. It must not be left empty.\n2. Choose either 'Rock'. 'Paper', 'Scissors'.\n3. It must not be a number.");
-    // return playerSelection !== null && isNaN(playerSelection) ? playerSelection : playerPlay();
-    return playerSelection;
+    let playerSelection = prompt("What's your play?\nNote:\n1. It must not be left empty.\n2. Choose either 'Rock'. 'Paper', 'Scissors'.\n3. It must not be a number.");
+    return playerSelection !== null && isNaN(playerSelection) ? playerSelection : playerPlay();
 }
 
 function playRound (playerSelection, computerSelection) {
