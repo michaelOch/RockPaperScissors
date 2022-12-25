@@ -5,8 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="container-fluid" class="container">
+        <div class="content-wrapper d-flex flex-column justify-content-center align-items-center w-100 py-4">
+            <h5 class="text-center text-light mb-4">Rock, Paper, Scissors</h5>
+            <h6 id="round" class="text-light"></h6>
+            <div class="row mt-3 w-100">
+                <div class="col-md-5 mt-3">
+                    <div class="relative d-flex flex-column justify-content-center border rounded py-2 px-3 bg-light border-primary">
+                        <h6 class="text-center">Player</h6>
+                        <div id="container" class="d-flex flex-row flex-wrap justify-content-center align-items-center py-4 px-2"></div>
+                        <div id="player-play" class="text-center">
+                            <h6>Your choice: <span id="playerchoice"></span></h6>
+                            <h2>0</h2>
+                        </div>
+                        <div class="overlay hide"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 h-100">
+                        <h6 id="vs" class="text-light show">VS</h6>
+                        <h6 id="final-result" class="text-light hide"></h6>
+                        <img id="trophy" class="hide w-100" src="./images/trophy.png" alt="trophy" />
+                        <img id="sad" class="w-100 hide" src="./images/sad.png" alt="trophy" />
+                        <button id="reset" type="button" class="btn btn-primary btn-block hide">Reset</button>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-3">
+                    <div class="relative d-flex flex-column justify-content-between border rounded py-2 px-3 h-100 bg-light border-primary">
+                        <h6 class="text-center">Com</h6>
+                        <div id="comp-container" class="d-flex flex-row justify-content-center align-items-center py-4 px-2">
+                            <div id="rock" class="choice-container hide">
+                                <img class="w-100" src="./images/rock.png"  alt="rock" />
+                            </div>
+                            <div id="paper" class="choice-container hide">
+                                <img class="w-100" src="./images/paper.png"  alt="rock" />
+                            </div>
+                            <div id="scissors" class="choice-container hide">
+                                <img class="w-100" src="./images/scissors.png"  alt="rock" />
+                            </div>
+                        </div>
+                        <div id="computer-play" class="text-center">
+                            <h6>Com selected: <span id="computerchoice"></span></h6>
+                            <h2>0</h2>
+                        </div>
+                        <div class="overlay hide"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="final-result"></div> -->
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
